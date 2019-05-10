@@ -1,3 +1,14 @@
+
+.lead{
+  font-size: 40px;
+}
 header{
   height: 25vh;
+  background: #4D495B;
 }
+.mouse{
+    background: #62A8E5;
+    border-radius: 12px;
+
+}
+/* F2E9DB  */
