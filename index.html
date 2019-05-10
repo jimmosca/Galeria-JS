@@ -8,17 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+
     <title>Galeria Riconuda</title>
   </head>
-  <body class="bg-light">
-<header class="d-flex flex-column  w-100 justify-content-center align-items-end">
-  <div class="mouse text-left mr-2 text-light">
+  <body class="bg-light" >
+<header id="cabesa" class="d-flex flex-column  w-100 justify-content-center align-items-end">
+  <div id="cabesaCont" class="mouse text-left mr-2 text-light">
     <h3 class="lead">Jaime</h3>
     <h3 class="lead">Michele</h3>
     <h3 class="lead">Adrian</h3>
   </div>
 
 </header>
+
     <div class="modal fade" id="____" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-body" role="document">
         <div class="modal-content">
@@ -36,15 +38,25 @@
     </div>
     <footer>
       <div id="contenedor" class="borde">
-      <h1 >LM_UD3_A03_Galeria </h1>
+      <h1 class ="lead">LM_UD3_A03_Galeria </h1>
       </div>
       <script>
       window.onscroll = function() {myFunction()};
 
       function myFunction() {
-        if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+        var element0 = document.getElementById('cabesa');
+        var element1 = document.getElementById('cabesaCont');
 
-      		document.getElementById("contenedor").className = "borde1";
+        if (window.scrollY >= 500) {
+          element0.className = "d-flex flex-row  w-100 justify-content-center align-items-center head0";
+          element1.className = "mouse0 d-flex flex-row w-50 justify-content-around text-light";
+        }else{
+          element0.className = "d-flex flex-column  w-100 justify-content-center align-items-end";
+          element1.className = "mouse text-left mr-2 text-light";
+        }
+        if (window.scrollY > 650 || window.scrollY > 650) {
+
+      		document.getElementById("contenedor").className = "borde1 text-center text-light lead";
         } else {
 
       		document.getElementById("contenedor").className = "borde";
