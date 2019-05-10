@@ -1,14 +1,9 @@
-function hasReached(){
-  console.log(window.scrollY);
-  var element = document.getElementById('wewe')
+function myFunction() {
+  if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
 
-  if (window.scrollY >= 500) {
-      element.style.color = 'green';
-      element.style.borderColor = 'green';
-      element.style.textAlign = 'center';
-  }else{
-    element.style.color = 'red';
-    element.style.borderColor = 'red';
-    element.style.textAlign = 'left';
+		document.getElementById("contenedor").className = "borde1";
+  } else {
+
+		document.getElementById("contenedor").className = "borde";
   }
 }
