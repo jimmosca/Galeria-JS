@@ -1,69 +1,96 @@
 <!doctype html>
 <html lang="es_ES">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-    <title>Galeria Riconuda</title>
-  </head>
-  <body class="bg-light" >
-<header id="cabesa" class="d-flex flex-column  w-100 justify-content-center align-items-end">
-  <div id="cabesaCont" class="mouse text-left mr-2 text-light">
-    <h3 class="lead">Jaime</h3>
-    <h3 class="lead">Michele</h3>
-    <h3 class="lead">Adrian</h3>
-  </div>
+  <title>Galeria Riconuda</title>
+</head>
+<body class="bg-light" >
+  <header id="cabesa" class="d-flex flex-column w-100 justify-content-center align-items-end">
+    <div id="cabesaCont" class="mouse text-left mr-2 text-light">
+      <h3 class="lead">Jaime</h3>
+      <h3 class="lead">Michele</h3>
+      <h3 class="lead">Adrian</h3>
+    </div>
 
-</header>
+  </header>
+  <div class="container">
+    <div class="row galeria0">
+      <div class="col-6">
+        <img src="rsc/dabingAdrian.jpeg" alt="Adrian Dabeador">
+      </div>
+      <div class="col-6">
+        <img src="rsc/junkieAlfredo.jpeg" alt="Alfredo Jugon">
+      </div>
+      <div class="col-6">
+        <img src="rsc/kamburJaime.jpeg" alt="Jaime Platanero">
+      </div>
+      <div class="col-6">
+        <img src="rsc/prayingMic.jpeg" alt="Michele Orador">
+      </div>
+      <div class="col-6">
 
-    <div class="modal fade" id="____" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-body" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Descripcion 1</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!-- <div class="modal-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div> -->
-        </div>
+      </div>
+      <div class="col-6">
+        <img src="rsc/teacherJaime.jpeg" alt="Jaime Profe">
+      </div>
+      <div class="col-6">
+        <img src="rsc/theGoodFellas.jpeg" alt="Los Jefes">
+      </div>
+      <div class="col-6">
+        <img src="rsc/workingMonkeys.jpeg" alt="Monos Trabajadores">
       </div>
     </div>
-    <footer>
-      <div id="contenedor" class="borde">
-      <h1 class ="lead">LM_UD3_A03_Galeria </h1>
+  </div>
+  <div class="modal fade" id="____" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-body" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Descripcion 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div> -->
       </div>
-      <script>
-      window.onscroll = function() {myFunction()};
+    </div>
+  </div>
+  <footer>
+    <div id="contenedor" class="borde">
+      <h1 class ="lead">LM_UD3_A03_Galeria </h1>
+    </div>
+    <script>
+    window.onscroll = function() {myFunction()};
 
-      function myFunction() {
-        var element0 = document.getElementById('cabesa');
-        var element1 = document.getElementById('cabesaCont');
+    function myFunction() {
+      var element0 = document.getElementById('cabesa');
+      var element1 = document.getElementById('cabesaCont');
 
-        if (window.scrollY >= 500) {
-          element0.className = "d-flex flex-row  w-100 justify-content-center align-items-center head0";
-          element1.className = "mouse0 d-flex flex-row w-50 justify-content-around text-light";
-        }else{
-          element0.className = "d-flex flex-column  w-100 justify-content-center align-items-end";
-          element1.className = "mouse text-left mr-2 text-light";
-        }
-        if (window.scrollY > 650 || window.scrollY > 650) {
-
-      		document.getElementById("contenedor").className = "borde1 text-center text-light lead";
-        } else {
-
-      		document.getElementById("contenedor").className = "borde";
-        }
+      if (window.scrollY >= 500) {
+        element0.className = "d-flex flex-row  w-100 justify-content-center align-items-center head0";
+        element1.className = "mouse0 d-flex flex-row w-50 justify-content-around text-light";
+      }else{
+        element0.className = "d-flex flex-column  w-100 justify-content-center align-items-end";
+        element1.className = "mouse text-left mr-2 text-light";
       }
-      </script>
-    </footer>
+      if (window.scrollY > 650 || window.scrollY > 650) {
 
-  </body>
+        document.getElementById("contenedor").className = "borde1 text-center text-light lead";
+      } else {
+
+        document.getElementById("contenedor").className = "borde";
+      }
+    }
+    </script>
+  </footer>
+
+</body>
 </html>
